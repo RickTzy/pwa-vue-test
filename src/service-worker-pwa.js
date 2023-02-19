@@ -19,7 +19,7 @@ self.addEventListener("push", function(event){
      );
 });
 
-self.addEventListener("notificationClick", function(event){
+self.addEventListener("notificationclick", function(event){
     const clickedNotification = event.notification;
     clickedNotification.close();
     if(click_open_url) {
