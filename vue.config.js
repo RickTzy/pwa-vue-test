@@ -7,6 +7,7 @@ module.exports = defineConfig({
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
         swSrc: './src/service-worker-pwa.js',
-    }
+        exclude: [/_redirects/]
+    },
   }
 })
